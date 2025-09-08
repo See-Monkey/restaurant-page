@@ -1,6 +1,4 @@
 function homePage() {
-    console.log("home page")
-
     const hours = [
         {day: "Monday", time: "Closed"},
         {day: "Tuesday - Friday", time: "5 - 10 pm"},
@@ -32,6 +30,9 @@ function homePage() {
     const paraOne = document.createElement("p");
     paraOne.textContent = "Over 45 years of visiting farms and produce partners in Italy guarantees the highest quality control on our key ingredients.";
     textOne.appendChild(paraOne);
+
+    const br = document.createElement("br");
+    textOne.appendChild(br);
 
     const h2b = document.createElement("h2");
     h2b.textContent = "Time Honored Tradition";

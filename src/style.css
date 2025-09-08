@@ -100,8 +100,8 @@ header button:hover {
   width: 80%;
 }
 
-.rowOne,
-.rowTwo {
+.homePage .rowOne,
+.homePage .rowTwo {
   background-color: #d3d2c5aa;
   backdrop-filter: blur(10px);
   margin: 20px;
@@ -110,7 +110,9 @@ header button:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* flex-wrap: wrap; */
+  border-bottom: 6px solid var(--red);
+  border-right: 3px solid var(--l-red);
+  box-shadow: 3px 5px 10px var(--l-red);
 }
 
 .homePage .imgOne {
@@ -146,7 +148,9 @@ header button:hover {
   flex: 1;
 }
 
-.homePage h2 {
+.homePage h2,
+.menuPage h2,
+.aboutPage h2 {
   margin: 10px 0px;
   font-family: "Norican", cursive;
   font-weight: lighter;
@@ -160,9 +164,60 @@ header button:hover {
 /* ========== menu page ========== */
 .menuPage {
   width: 80%;
+  background-color: #d3d2c5aa;
+  backdrop-filter: blur(10px);
+  margin: 20px;
+  padding: 20px;
+  border-radius: 15px;
+  border-bottom: 6px solid var(--red);
+  border-right: 3px solid var(--l-red);
+  box-shadow: 3px 5px 10px var(--l-red);
+}
+
+.menuPage .menuRow {
+  display: grid;
+  grid-template-columns: 7fr 1fr 1fr;
+  padding: 10px 0px;
+  border-top: 1px solid var(--red);
+}
+
+.menuPage h2 {
+  text-align: center;
 }
 
 /* ========== about page ========== */
 .aboutPage {
   width: 80%;
+}
+
+.aboutPage .rowOne,
+.aboutPage .rowTwo {
+  background-color: #d3d2c5aa;
+  backdrop-filter: blur(10px);
+  margin: 40px;
+  padding: 20px;
+  border-radius: 15px;
+  border-bottom: 6px solid var(--red);
+  border-right: 3px solid var(--l-red);
+  box-shadow: 3px 5px 10px var(--l-red);
+}
+
+.aboutPage .rowOne {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.aboutPage .rowTwo {
+  text-align: center;
+  padding: 50px;
+}
+
+.aboutPage .imgOne {
+  width: 450px;
+  height: 350px;
+  background-image: url("./img/dough.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
