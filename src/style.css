@@ -34,5 +34,52 @@ h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 :root {
-  /* declare global custom properties (variables)*/
+  --red: #db504a;
+  --l-red: #ff6f59;
+  --slate: #274049;
+  --bone: #d3d2c5;
+  --acc: #43aa8b; 
+}
+
+body {
+    height: 100%;
+    background-color: var(--slate);
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("./img/background.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+header {
+    text-align: center;
+    background-color: #27404988;
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    padding-top: 40px;
+    font-family: "Alex Brush", cursive;
+    font-size: 60px;
+    color: var(--bone);
+    text-shadow: 3px 3px 6px var(--slate);
+}
+
+header button {
+    background-color: #00000000;
+    border: 6px solid #00000000;
+    padding: 10px;
+    margin: 10px;
+    color: var(--bone);
+    text-shadow: 3px 3px 6px var(--slate);
+}
+
+header button:hover {
+    border-bottom: 6px solid var(--acc);
+    color: var(--acc);
 }
