@@ -1,3 +1,4 @@
+/* ========== reset ========== */
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -33,6 +34,8 @@ h1, h2, h3, h4, h5, h6 {
 #root, #__next {
   isolation: isolate;
 }
+
+/* ========== global ========== */
 :root {
   --red: #db504a;
   --l-red: #ff6f59;
@@ -56,6 +59,7 @@ body {
     background-attachment: fixed;
 }
 
+/* ========== header ========== */
 header {
     text-align: center;
     background-color: #27404988;
@@ -65,7 +69,7 @@ header {
 h1 {
     padding-top: 40px;
     font-family: "Alex Brush", cursive;
-    font-size: 60px;
+    font-size: 66px;
     color: var(--bone);
     text-shadow: 3px 3px 6px var(--slate);
 }
@@ -82,4 +86,83 @@ header button {
 header button:hover {
     border-bottom: 6px solid var(--acc);
     color: var(--acc);
+}
+
+#content {
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ========== home page ========== */
+.homePage {
+  width: 80%;
+}
+
+.rowOne,
+.rowTwo {
+  background-color: #d3d2c5aa;
+  backdrop-filter: blur(10px);
+  margin: 20px;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* flex-wrap: wrap; */
+}
+
+.homePage .imgOne {
+  width: 450px;
+  height: 350px;
+  background-image: url("./img/orderup.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.homePage .imgTwo {
+  width: 450px;
+  height: 350px;
+  background-image: url("./img/dining.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.textOne {
+  padding: 4px 20px;
+  width: 600px;
+  min-width: 300px;
+  flex-shrink: 2;
+  margin-left: 20px;
+}
+
+.textTwo {
+  padding: 4px 20px;
+  max-width: 700px;
+  text-align: center;
+  flex: 1;
+}
+
+.homePage h2 {
+  margin: 10px 0px;
+  font-family: "Norican", cursive;
+  font-weight: lighter;
+  font-size: 34px;
+}
+
+.homePage h3 {
+  margin-top: 10px;
+}
+
+/* ========== menu page ========== */
+.menuPage {
+  width: 80%;
+}
+
+/* ========== about page ========== */
+.aboutPage {
+  width: 80%;
 }

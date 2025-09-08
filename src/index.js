@@ -28,4 +28,5 @@ document.addEventListener("click", (e) => {
         }
     });
 
+clear();
 homePage();
