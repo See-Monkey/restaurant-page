@@ -39,7 +39,7 @@ function homePage() {
     textOne.appendChild(h2b);
 
     const paraTwo = document.createElement("p");
-    paraTwo.textContent = "Family recipes that have been passed down for generations, rooted in Italian traditions, loving crafted to share with you.";
+    paraTwo.textContent = "Family recipes that have been passed down for generations, rooted in Italian traditions, lovingly crafted to share with you.";
     textOne.appendChild(paraTwo);
 
     const rowTwo = document.createElement("div");
